@@ -1,5 +1,4 @@
 
-
 //Imports nativos do Angular:
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +11,7 @@ import { AppRoutingModule } from './app.routing.module';
 //Imports do Desenvolvedor:
 //import { PhotoComponent } from './photos/photo/photo.component';
 import { PhotosModule } from './photos/photos.module';
+import { ErrorsModule } from './errors/errors.module';
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import { PhotosModule } from './photos/photos.module';
   imports: [
     BrowserModule,
     PhotosModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
